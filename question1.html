@@ -20,45 +20,44 @@
     <main>
         <h1>Examen 2 - Automne 2024</h1>
         <h2>Question 1 - Formulaire de prise de rendez-vous</h2>
-        <form flex-container>
+        <form action="https://design-web.onrender.com/submit" method="post" flex-container>
             <label for="nom-text" class="label">Nom de l'élève:</label>
             <div>
-                <input name="nom-text">
+                <input name="nom-text"required maxlength="30" minlength="3">
             </div>
             <label for="nom-cours" class="label">Code de cours:</label>
             <div>
-                <input name="nom-cours">
+                <input name="nom-cours"  pattern="^\d{3}-\d\w\d-\w{2}$" required>
             </div>
              <label for="date">Date du rendez-vous</label>
             <div>
-            <input name="date" type="date" id="date" required/>
+            <input name="date" type="date" id="date" required min="2025-11-11" max="2025-12-25"/>
             </div>
             <label for="number">Duré du rendez-vous</label>
             <div>
-            <input name="number" type="number" id="number" min="0" max="90" value="30"/>
+            <input name="number" type="number" id="number" min="5" max="60" value="15" step="5" required/>
             </div>
             <label for="sujets">Sujet pour la rencontre :</label>
             <div>
             <select id="sujets" name="sujets" required>
             <option value="" disabled selected>Sélectionnez un sujet</option>
-            <option value="Animals">Animals</option>
-            <option value="Humains">Humains</option>
-            <option value="Extra-terrestes">Extra-terrestes</option>
-            <!-- <option value="">Quel est le sujet de votre message?</option> -->
+            <option value="1">Sujet #1 Hypopocanpe de mers</option>
+            <option value="2">Sujet #2 Patric l'étoile de mers</option>
             </select>
             </div>
             <label for="monTexte">Commentaire :</label>
             <div>
-                <textarea name="monTexte" cols="30" rows="10" required maxlength="500"></textarea>
+                <textarea name="monTexte" cols="30" rows="4" ></textarea>
             </div>
             
             <div>
                 <label for="monCheckbox">Je m'engage à être présent au rendez-vous</label>
-                 <input type="checkbox" id="monCheckbox" name="option1" value="valeur1">
+              
+                 
             </div>
-            <div>
                
-        
+            <div>
+        <input type="checkbox" id="monCheckbox" name="option1" value="valeur1">
             </div>
              <button type="submit">Réserver</button>
                

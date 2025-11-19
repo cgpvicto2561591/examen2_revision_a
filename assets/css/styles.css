@@ -98,3 +98,7 @@ button:hover {
 mot-traduit {
     font-weight: bold;
 }
+#monCheckbox{
+    width: 20px;
+    height: 20px;
+}
