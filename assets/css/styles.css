@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 16px; margin: 0 0 16px; text-align: justify; text-justify: inter-word; text-align: center; 
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 25px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: bold; line-height: 32px; margin: 0 0 16px; text-align: center; }
+
+header, footer {
+    flex: 0 1 auto;
+}
+
+footer {
+    padding:20px 0;
+}
+
+/* 
+    Menu
+    Source: https://www.w3schools.com/css/css_navbar_horizontal.asp 
+*/
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+  
+header nav li a:hover {
+    background-color: #111;
+}
+
+main {
+    flex: 1 1 auto;
+    margin:10px;
+}
+
+.erreur {
+    color:red;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* Formulaires */
+form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    margin:auto;
+    padding:10px;
+    width:400px;
+    background-color: #099d4c;
+    color:#fff;
+}
+
+label { text-align: right; }
+form div { text-align: left }
+
+button { 
+    grid-column: 1/3; 
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding:10px;
+}
+
+button:hover {
+    background-color: #045428; 
+    color: white;
+    border-color:white;
+    cursor: pointer;
+}
+
+
+/** Traduction **/
+mot-traduit {
+    font-weight: bold;
+}

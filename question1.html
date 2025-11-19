@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Examen 2 - Automne 2024</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="question1.html">Question 1</a></li>
+                <li><a href="question2.html">Question 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Examen 2 - Automne 2024</h1>
+        <h2>Question 1 - Formulaire de prise de rendez-vous</h2>
+        <form flex-container>
+            <label for="nom-text" class="label">Nom de l'élève:</label>
+            <div>
+                <input name="nom-text">
+            </div>
+            <label for="nom-cours" class="label">Code de cours:</label>
+            <div>
+                <input name="nom-cours">
+            </div>
+             <label for="date">Date du rendez-vous</label>
+            <div>
+            <input name="date" type="date" id="date" required/>
+            </div>
+            <label for="number">Duré du rendez-vous</label>
+            <div>
+            <input name="number" type="number" id="number" min="0" max="90" value="30"/>
+            </div>
+            <label for="sujets">Sujet pour la rencontre :</label>
+            <div>
+            <select id="sujets" name="sujets" required>
+            <option value="" disabled selected>Sélectionnez un sujet</option>
+            <option value="Animals">Animals</option>
+            <option value="Humains">Humains</option>
+            <option value="Extra-terrestes">Extra-terrestes</option>
+            <!-- <option value="">Quel est le sujet de votre message?</option> -->
+            </select>
+            </div>
+            <label for="monTexte">Commentaire :</label>
+            <div>
+                <textarea name="monTexte" cols="30" rows="10" required maxlength="500"></textarea>
+            </div>
+            
+            <div>
+                <label for="monCheckbox">Je m'engage à être présent au rendez-vous</label>
+                 <input type="checkbox" id="monCheckbox" name="option1" value="valeur1">
+            </div>
+            <div>
+               
+        
+            </div>
+             <button type="submit">Réserver</button>
+               
+        </form>
+    </main>
+
+    <footer>
+        <em>Examen rédigé par Carine Croteau et Mathieu Fréchette.<br> Il est interdit de partager cet énoncé.</em>
+    </footer>
+</body>
+</html>
